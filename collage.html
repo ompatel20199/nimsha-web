@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1-0">
+    <link rel="preconnect" href="https:fonts.gstatic.com" crossorigin>
+    <link href="https:fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Sevillana&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/collage.css">
+    <title>Nimmy Unfiltered</title>
+</head>
+<body>
+
+    <p>Now, let’s take a look at our very own, beautiful, sephora model, <br> (completely unfiltered) xx</p>
+
+    
+    
+    <!-- <button class="show-all">show all</button> -->
+    
+
+    <img src="./unfiltered/2.JPG" alt="" class="image img-1"> 
+    <img src="./unfiltered/4.JPG" alt="" class="image img-2">  
+    <img src="./unfiltered/19.JPG" alt="" class="image img-3">  
+    <img src="./unfiltered/5.JPG" alt="" class="image img-4"> 
+    <img src="./unfiltered/7.JPG" alt="" class="image img-5">  
+    <img src="./unfiltered/22.JPG" alt="" class="image img-6">  
+    <img src="./unfiltered/12.JPG" alt="" class="image img-7">  
+    <img src="./unfiltered/17.JPG" alt="" class="image img-8">  
+
+    
+
+    <button class="show-all">show all</button>
+    <a href="pre-question-page.html"><button class="next">next</button></a>
+
+
+    </body>
+    <script>
+        document.querySelector('.show-all').addEventListener('click', function() {
+            var images = document.querySelectorAll('.image');
+            
+            images.forEach(function(image, index) {
+                // Set a timeout for each image based on its index to stagger the effect
+                setTimeout(function() {
+                    image.classList.add('js-img');
+                }, index * 500); // Adjust the delay as needed, 500ms increment here
+            });
+        });
+    </script>
+    
+
+</html>

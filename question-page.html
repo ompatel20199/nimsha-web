@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Sevillana&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/question.css">
+    <title>Boiling Question</title>
+</head>
+<body>
+
+    <div class="section">
+        <p>Can we just run away and get married already?</p>
+        <button class="button-yes button">Yes</button>
+        <button class="button-no button">No</button>
+    </div>
+    <button class="button-restart button" style="display:none;">Restart</button>
+
+
+    <!-- <img src="./gifs/1.gif" alt=""> -->
+    <img src="./gifs/2.gif" alt="" class="cat-gif cg1">
+    <img src="./gifs/2.gif" alt="" class="cat-gif cg2">
+    <img src="./gifs/2.gif" alt="" class="cat-gif cg3">
+    <img src="./gifs/2.gif" alt="" class="cat-gif cg4">
+    
+    <img src="./gifs/6.gif" alt="" class="love">
+    <img src="./gifs/4.gif" alt="" class="confetti">
+
+
+
+<script>
+    document.querySelector('.button-no').addEventListener('click', function() {
+        document.body.style.backgroundColor = 'black'; // Change background color to black
+        this.style.display = 'none'; // Hide the "No" button
+        document.querySelector('.button-yes').style.display = 'none'; // Hide the "Yes" button
+        document.querySelector('.button-restart').style.display = 'block'; // Show the "Restart" button
+        alert('you just killed omi'); // Alert message
+    });
+
+    // Change opacity of the GIFs when "Yes" is clicked
+    document.querySelector('.button-yes').addEventListener('click', function() {
+        var catGifs = document.querySelectorAll('.cat-gif');
+        var loveGif = document.querySelector('.love');
+        var confettiGif = document.querySelector('.confetti');
+
+        
+
+        // Set opacity for each GIF
+        catGifs.forEach(function(gif) {
+            gif.style.opacity = '1';
+        });
+        loveGif.style.opacity = '1';
+        confettiGif.style.opacity = '1';
+    });
+
+    document.querySelector('.button-restart').addEventListener('click', function() {
+        window.location.reload(); // Reload the page
+    });
+</script>
+
+</body>
+</html>

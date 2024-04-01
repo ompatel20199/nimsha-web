@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16;
+}
+
+:root {
+    --font-family: "Tangerine", cursive;
+    --color-1: #f7cfe5
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 4rem;
+    font-weight: 100;
+    text-align: center;
+    overflow: hidden;
+}
+
+.section {
+    margin-top: 20rem;
+}
+
+button {
+    font-family: var(--font-family);
+    padding: 0.5rem 4.75rem 1rem 4.5rem;
+    font-size: 4rem;
+    margin-top: 1rem;
+    border-radius: 100px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+    border: solid 2px black;
+}
+
+.button-restart {
+    font-family: var(--font-family);
+    padding: 0.5rem 4.75rem 1rem 4.5rem;
+    font-size: 4rem;
+    position: fixed; 
+    top: 40%; 
+    left: 40%; 
+    border-radius: 100px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: none;
+    display: none; 
+}
+
+.cat-gif {
+    width: 10rem;
+    margin-bottom: 20rem;
+    margin-left: 5rem;
+}
+
+.confetti {
+    width: 100%;
+    z-index: -1; 
+    position: absolute;
+    top: 0; 
+    left: 0; 
+}
+
+/* Initial state for cat GIFs */
+.cat-gif {
+    width: 10rem;
+    margin-bottom: 20rem;
+    margin-left: 5rem;
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity change */
+}
+
+/* Opacity change on hover over the "Yes" button */
+.button-yes:hover ~ .cat-gif {
+    opacity: 1; /* Make cat GIFs visible when "Yes" is hovered */
+}
+
+/* Initial state for other GIFs */
+.love, .confetti {
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity change */
+}
+
+/* Assuming you add specific classes in your HTML like .love1, .love2, etc. */
+.love1, .love2, .love3 { /* Add more as needed */
+    position: absolute;
+    /* Assign different top and left values to each to scatter them */
+}
+
+.love1 {
+    top: 10%;
+    left: 20%;
+}
+
+.love2 {
+    top: 40%;
+    right: 30%;
+}
+
+.love3 {
+    bottom: 15%;
+    left: 50%;
+}
+

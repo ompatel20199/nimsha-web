@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16;
+}
+
+:root {
+    --font-family: "Tangerine", cursive;
+    --color-1: rgb(248, 118, 222, 0.5);
+}
+
+body {
+    background-color: var(--color-1);
+    font-family: var(--font-family);
+    font-size: 6rem;
+    text-align: center;
+    margin-top: 5rem;
+    overflow-x: hidden;
+}
+
+.top-left-sparkle {
+    rotate: 40deg;
+    position: relative;
+    right: 35rem;
+    bottom: 10rem;
+}
+.top-right-sparkle {
+    rotate: 80deg;
+    position: relative;
+    left: 37.5rem;
+    bottom: 18rem;
+}
+.bottom-left-sparkle {
+    rotate: 120deg;
+    position: relative;
+    left: 35rem;
+    bottom: 12.5rem;
+}
+
+.bottom-right-sparkle {
+    rotate: 160deg;
+    position: relative;
+    right: 30rem;
+    bottom: 22.5rem;
+}
+
+.photo-timeline-div {
+    margin-top: -15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.photo-left-details-right-div, .photo-right-details-left-div {
+    display: flex;
+    gap: 35rem;
+}
+
+img {
+    width: 35rem;
+    height: auto;
+    margin-bottom: 10rem;
+}
+
+button {
+    font-family: var(--font-family);
+    padding: 0.5rem 4.75rem 1rem 4.5rem;
+    font-size: 4rem;
+    margin-top: 1rem;
+    border-radius: 100px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 4rem;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}

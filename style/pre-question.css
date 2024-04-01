@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;;
+}
+
+:root {
+    --font-family: "Tangerine", cursive;
+    --color-1: rgb(248, 118, 222, 0.5);
+}
+
+body {
+    background-color: var(--color-1);
+    font-family: var(--font-family);
+}
+
+p {
+    font-size: 5rem;
+    display: inline-block;
+}
+
+button {
+    font-family: var(--font-family);
+    padding: 0.5rem 4.75rem 1rem 4.5rem;
+    font-size: 4rem;
+    margin-top: 1rem;
+    border-radius: 100px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 4rem;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+body > div {
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}

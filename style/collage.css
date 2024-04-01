@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16;
+    cursor: none;
+}
+
+:root {
+    --font-family: "Tangerine", cursive;
+    --color-1: #f7cfe5
+}
+
+body {
+    background-color: var(--color-1);
+    font-family: var(--font-family);
+    font-size: 4rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+button {
+    font-family: var(--font-family);
+    padding: 0.5rem 4.75rem 1rem 4.5rem;
+    font-size: 4rem;
+    margin-top: 1rem;
+    border-radius: 100px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+p {
+    margin-top: 0.5rem;
+}
+
+img {
+    width: 7.5rem;
+}
+
+.image {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease; 
+}
+
+.js-img {
+    opacity: 1 !important; 
+}
+
+
+.image:hover {
+    opacity: 1;
+}
+
+
+.img-0 {
+    width: 50rem;
+}
+
+.img-1 {
+    rotate: 30deg;
+    left: 43%;
+    bottom: 57%;
+    width: 10rem;
+}
+
+.img-2 {
+    rotate: 70deg;
+    left: 35%;
+    width: 6rem;
+}
+
+.img-3 {
+    rotate: -15deg;
+    left: 30%;
+    top: 40%;
+}
+
+.img-4 {
+    rotate: -50deg;
+    left: 40%;
+    top: 59%;
+    width: 7.5rem;
+    height: 13rem;
+}
+
+.img-5 {
+    rotate: 50deg;
+    right: 43%;
+    top: 70%;
+    width: 5.25rem;
+}
+
+.img-6 {
+    rotate: 40deg;
+    right: 32%;
+    top: 45%;
+}
+
+.img-7 {
+    rotate: -40deg;
+    right: 30%;
+    width: 6.5rem;
+    top: 25%;
+}
+
+.img-8 {
+    rotate: 50deg;
+    right: 40%;
+    bottom: 55%;
+    width: 7rem;
+}
+
+
+body button:nth-of-type(1) {
+    position: fixed;
+    bottom: 5%;
+    left: 42%;
+}
+
+.show-all {
+    margin-left: 30rem;
+    margin-bottom: 15rem;
+}
+
+.next {
+    margin-left: 30rem;
+    margin-bottom: 8rem;
+}
+
